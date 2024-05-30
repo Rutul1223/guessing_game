@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f9fa; /* Light gray */
+    }
+    h1 {
+      color: #007bff; /* Blue */
+    }
+    .gameStatus {
+      margin-top: 20px;
+    }
+    .guesses, .lastResult {
+      font-weight: bold;
+    }
+    .lowOrHi {
+      margin-top: 20px;
+      color: #28a745; /* Green */
+    }
+    .resultParas {
+      margin-top: 20px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #bfcbd8; /* Light gray */
+      color: #495057; /* Dark gray */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="text"]:hover {
+      background-color: #e2e6ea; /* Lighter gray on hover */
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #dc3545; /* Red */
+      color: #fff; /* White */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #c82333; /* Darker red on hover */
+    }
+  </style>
+</head>
+<body>
+  <h1>Number Guessing Game</h1>
+  <p>Guess a number between 1 and 100:</p>
+  <input type="text" id="guessField">
+  <button id="subt">Submit Guess</button>
+  <div class="gameStatus">
+    <p>Guesses: <span class="guesses"></span></p>
+    <p>Remaining Guesses: <span class="lastResult"></span></p>
+    <p class="lowOrHi"></p>
+    <div class="resultParas"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
